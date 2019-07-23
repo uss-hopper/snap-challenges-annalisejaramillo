@@ -11,3 +11,8 @@ CREATE TABLE task (
    taskPriority VARCHAR(64) NOT NULL,
    taskDescription VARCHAR(256)
 );
+
+SELECT tweet.tweetContent, profile.profileAtHandle FROM tweet
+	INNER JOIN 'like' on tweet.tweetId = like.likeTweetId
+	INNER JOIN profile ON like.likeProfileId = profile.profileId;
+	WHERE
