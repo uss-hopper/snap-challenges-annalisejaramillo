@@ -52,12 +52,9 @@ public function __construct($newBookId, $newBookTitle){
 
 /**
  *accessor method for book id
- *
  * @return Uuid value of book id
  */
-	public function getBookId(): Uuid {
-		return $this->bookId;
-	}
+//
 
 /**
  *mutator method for book id
